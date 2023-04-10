@@ -27381,7 +27381,17 @@ with pkgs;
   # Upstream Barebox:
   inherit (callPackage ../misc/barebox {})
     buildBarebox
-    bareboxTools;
+    bareboxTools
+    bareboxRockchip
+    bareboxIMXv7
+    bareboxQemuAarch64
+    bareboxQemuArm
+    bareboxRiscv64
+    bareboxQemuRiscv32
+    bareboxQemuX86
+    bareboxRaspberryPi_32bit
+    bareboxRaspberryPi_64bit
+    ;
 
   uclibc-ng = callPackage ../os-specific/linux/uclibc-ng { };
 
